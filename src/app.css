@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&display=swap');
+
+:root, [data-theme="dark"] {
+	--bg: #1a1e1c;
+	--bg-panel: #232825;
+	--bg-card: #2a2f2c;
+	--bg-input: #1e2320;
+	--border: #3a4038;
+	--text: #d4ddd6;
+	--text-dim: #8a9a8e;
+	--text-bright: #eaf5ec;
+	--accent: #7bc47f;
+	--accent-dim: #4a8a4e;
+	--accent-glow: #7bc47f33;
+	--sun: #f0c850;
+	--sun-glow: #f0c85044;
+	--danger: #c47b7b;
+}
+
+[data-theme="light"] {
+	--bg: #f4f1ec;
+	--bg-panel: #ffffff;
+	--bg-card: #f0ede7;
+	--bg-input: #e8e5df;
+	--border: #d0cdc6;
+	--text: #3a3832;
+	--text-dim: #8a877e;
+	--text-bright: #1a1816;
+	--accent: #2d8a32;
+	--accent-dim: #3aaa40;
+	--accent-glow: #2d8a3222;
+	--sun: #c89a20;
+	--sun-glow: #c89a2033;
+	--danger: #c44a4a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	height: 100vh;
+	overflow: hidden;
+}
+
+::selection {
+	background: var(--accent-glow);
+	color: var(--text-bright);
+}
